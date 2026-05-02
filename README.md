@@ -26,24 +26,35 @@ It also includes authentication and role-based access to control what each user 
 📊 Track Task Status
 ⚡ Fast and responsive UI
 🌐 Fully deployed application
+
+
 🛠️ Tech Stack
 Frontend
 React (Vite)
 Tailwind CSS
 Axios
+
+
 Backend
 Node.js
 Express.js
 JWT Authentication
+
+
 Database
 Firebase Firestore
+
+
 Deployment
 Frontend: Netlify
 Backend: Railway
+
 ⚙️ Local Setup
+
 1. Clone Repo
 git clone https://github.com/codecrafter10/team-task-manager.git
 cd team-task-manager
+
 2. Backend Setup
 cd server
 npm install
@@ -64,16 +75,23 @@ npm run dev
 <img width="1915" height="923" alt="image" src="https://github.com/user-attachments/assets/bd09f3ad-715b-453a-ba9f-bd7f5a5f2b13" />
 
 
-🎯 How It Works
-Login to the app
+🎯 How It Works 
+
+Login to the app 
+
 Create a project
+
 Add tasks
+
 Track progress
 Update task status
+
+
 🔒 Security
 Sensitive files are not pushed to GitHub
 JWT used for authentication
 Protected API routes
+
 🚀 Future Improvements
 Drag & Drop Kanban board
 Notifications
