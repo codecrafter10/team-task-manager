@@ -1,104 +1,158 @@
-🔥 Team Task Manager
+# 🔥 TaskFlow – Team Task Manager
 
-A full-stack web app to manage projects and tasks within a team.
-It allows users to create projects, assign tasks, and track progress in a simple and clean interface.
+TaskFlow is a full-stack team collaboration app that helps users manage projects and tasks efficiently.
+It allows teams to create projects, assign tasks, and track progress in a clean and intuitive interface.
 
-🚀 Live Demo
+---
 
-👉 https://team-task-manager-zaidali.netlify.app/
+## 🚀 Live Demo
 
-📂 GitHub Repository
+🌐 Live App: https://team-task-manager-zaid.netlify.app
+📦 Backend API: (Add your Railway URL here)
 
-👉 https://github.com/codecrafter10/team-task-manager
+---
 
-📌 About the Project
+## 📌 Features
 
-This project was built to simplify team collaboration.
-Users can organize their work by creating projects and managing tasks across different stages like To Do, In Progress, and Done.
+* 🔐 User Authentication (Login / Register)
+* 📁 Create and manage projects
+* 📝 Create, assign, and update tasks
+* 📊 Track task status (Pending → Done)
+* 🎯 Kanban-style task workflow (drag & drop)
+* ⚡ Real-time UI updates
+* 🔒 Secure API with JWT authentication
 
-It also includes authentication and role-based access to control what each user can do.
+---
 
-✨ Features
-🔐 Login & Authentication
-👥 Role-Based Access (Admin / Member)
-📁 Create Projects
-📝 Create & Assign Tasks
-📊 Track Task Status
-⚡ Fast and responsive UI
-🌐 Fully deployed application
+## 🛠️ Tech Stack
 
+### Frontend
 
-🛠️ Tech Stack
-Frontend
-React (Vite)
-Tailwind CSS
-Axios
+* React.js (Vite)
+* Tailwind CSS
+* Axios
 
+### Backend
 
-Backend
-Node.js
-Express.js
-JWT Authentication
+* Node.js
+* Express.js
+* Firebase Firestore
 
+### Authentication
 
-Database
-Firebase Firestore
+* JWT (JSON Web Token)
+* bcrypt.js
 
+### Deployment
 
-Deployment
-Frontend: Netlify
-Backend: Railway
+* Frontend → Netlify
+* Backend → Railway
 
-⚙️ Local Setup
+---
 
-1. Clone Repo
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/codecrafter10/team-task-manager.git
 cd team-task-manager
+```
 
-2. Backend Setup
+---
+
+### 2️⃣ Setup Backend
+
+```bash
 cd server
 npm install
+```
 
-Create .env file:
+Create a `.env` file inside `/server`:
 
+```env
+MONGO_URI=your_database_url
 JWT_SECRET=your_secret_key
+```
 
-Run server:
+Start server:
 
+```bash
 npm start
-3. Frontend Setup
+```
+
+---
+
+### 3️⃣ Setup Frontend
+
+```bash
 cd client
 npm install
 npm run dev
-📸 Screenshots
+```
 
-<img width="1915" height="923" alt="image" src="https://github.com/user-attachments/assets/bd09f3ad-715b-453a-ba9f-bd7f5a5f2b13" />
+---
+
+## 🌐 API Endpoints
+
+### Auth
+
+* POST `/api/auth/register`
+* POST `/api/auth/login`
+
+### Projects
+
+* POST `/api/projects/create`
+
+### Tasks
+
+* POST `/api/tasks/create`
+* GET `/api/tasks/:projectId`
+* PUT `/api/tasks/:taskId`
+* DELETE `/api/tasks/:taskId`
+
+---
+
+## 📸 Screenshots
+
+![Uploading image.png…]()
 
 
-🎯 How It Works 
+## 📂 Project Structure
 
-Login to the app 
+```bash
+team-task-manager/
+│
+├── client/        # React Frontend
+├── server/        # Node Backend
+├── README.md
+```
 
-Create a project
+---
 
-Add tasks
+## ⚠️ Important Notes
 
-Track progress
-Update task status
+* Environment variables are not included for security reasons
+* Ensure backend is deployed before using frontend
+* Update API URL in frontend before deployment
 
+---
 
-🔒 Security
-Sensitive files are not pushed to GitHub
-JWT used for authentication
-Protected API routes
+## 👨‍💻 Author
 
-🚀 Future Improvements
-Drag & Drop Kanban board
-Notifications
-Team collaboration features
-Better dashboard
-👨‍💻 Author
+**Zaid Ali**
+Computer Science Engineer | Full Stack Developer
 
-Zaid Ali
+---
 
-                                                            
+## ⭐ Final Words
+
+This project demonstrates:
+
+* Full-stack development
+* Authentication & security
+* API integration
+* Modern UI/UX design
+* Deployment skills
+
+---
